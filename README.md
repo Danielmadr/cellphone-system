@@ -1,22 +1,53 @@
-# DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+# SmartphoneSolutionCSharp - Desafio de Projeto .NET POO
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white) ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 
-## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
+Este repositório contém uma solução aprimorada para o desafio de projeto "Abstraindo um Smartphone com POO" proposto no bootcamp .NET da Digital Innovation One (DIO).
 
-## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
+O projeto original pode ser encontrado em [digitalinnovationone/trilha-net-poo-desafio](https://github.com/digitalinnovationone/trilha-net-poo-desafio).
 
-![Diagrama classes](Imagens/diagrama.png)
+Esta versão implementa algumas melhorias em relação ao código base, além de introduzir novas funcionalidades para gerenciar os aplicativos instalados nos dispositivos.
 
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+## Visão Geral do Projeto
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+O `SmartphoneSolutionCSharp` simula um sistema de gerenciamento de smartphones via console. Ele permite representar diferentes modelos de celulares (Nokia e iPhone), realizar chamadas, instalar aplicativos e realizar operações de gerenciamento dos apps.
+
+## Principais Mudanças e Funcionalidades Implementadas
+
+Esta solução se diferencia do projeto original através das seguintes modificações:
+
+### 1. Sistema de Gerenciamento de Aplicativos Instalados
+
+Cada smartphone agora mantém uma **lista interna de aplicativos instalados**, permitindo:
+
+- Instalar novos aplicativos.
+- Listar todos os aplicativos instalados.
+- Impedir a instalação duplicada de um mesmo app.
+- Desinstalar aplicativos.
+
+## Como Executar
+
+1. **Clone o repositório:**
+
+```bash
+git clone https://github.com/SeuUsuario/SmartphoneSolutionCSharp.git
+cd SmartphoneSolutionCSharp
+```
+
+2. **Compile o projeto:**
+
+```bash
+dotnet build
+```
+
+3. **Execute a aplicação:**
+
+```bash
+dotnet run
+```
+
+O programa irá rodar um exemplo simples de criação de um Nokia e um iPhone, com instalação e remoção de aplicativos, além de chamadas.
+
+---
+
+*Este projeto foi desenvolvido como parte do Bootcamp .NET da DIO.*
